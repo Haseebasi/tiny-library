@@ -18,7 +18,7 @@ export default function Home() {
 
           <div className="flex gap-4">
             <Link
-              href="/3d-models"
+              href="/books"
               className="px-6 py-3 text-black transition duration-100 bg-white border-2 border-black hover:bg-black hover:text-white"
             >
               Browse BOOKS
