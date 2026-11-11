@@ -14,16 +14,16 @@ export default function CategoriesNav() {
         <nav className="w-full overflow-x-auto md:overflow-visible scrollbar-hide">
           <ul className="flex px-4 py-3 whitespace-nowrap md:flex-col md:p-0 md:space-x-0 md:space-y-3">
             <NavLink
-              href="/3d-models"
-              isActive={pathname === "/3d-models"}
+              href="/books"
+              isActive={pathname === "/books"}
             >
               All
             </NavLink>
             {categories.map(item => (
               <NavLink
-                href={`/3d-models/categories/${item.slug}`}
+                href={`/books/categories/${item.slug}`}
                 key={item.slug}
-                isActive={pathname === `/3d-models/categories/${item.slug}`}
+                isActive={pathname === `/books/categories/${item.slug}`}
               >
                 {item.displayName}
               </NavLink>

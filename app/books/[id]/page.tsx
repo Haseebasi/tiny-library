@@ -1,12 +1,12 @@
 import { FaRegHeart } from "react-icons/fa6"
 import Pill from "@/app/components/Pill"
-import type { ModelDetailPageProps } from "@/app/types"
-import { getModelById } from "@/app/lib/models"
-import placeholderImg from "@/public/placeholder.png"
+import type { BookDetailPageProps } from "@/app/types"
+import { getBookById } from "@/app/lib/books"
+import placeholderImg from "@/public/hero-image-square.png"
 
-export default async function ModelDetailPage({ params }: ModelDetailPageProps) {
+export default async function BookDetailPage({ params }: BookDetailPageProps) {
   const { id } = await params
-  const model = await getModelById(id)
+  const model = await getBookById(id)
 
   return (
     <div className="container max-w-6xl px-4 py-8 mx-auto">
@@ -37,17 +37,11 @@ export default async function ModelDetailPage({ params }: ModelDetailPageProps) 
 
           <Pill
             className="mb-6 w-fit"
-            role="status"
             aria-label="Category"
           >
             {model.category}
           </Pill>
 
-          <div className="mb-6 prose prose-lg max-w-none">
-            <p className="leading-relaxed text-gray-700">
-              {model.description}
-            </p>
-          </div>
 
           <footer className="text-sm text-gray-500">
             <time dateTime={model.dateAdded}>

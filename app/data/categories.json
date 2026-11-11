@@ -1,12 +1,11 @@
 [
-    { "displayName": "3D Printer", "slug": "3d-printer" },
-    { "displayName": "Art", "slug": "art" },
-    { "displayName": "Education", "slug": "education" },
-    { "displayName": "Fashion", "slug": "fashion" },
-    { "displayName": "Hobby & DIY", "slug": "hobby-diy" },
-    { "displayName": "Household", "slug": "household" },
-    { "displayName": "Miniatures", "slug": "miniatures" },
-    { "displayName": "Props & Cosplay", "slug": "props-cosplay" },
-    { "displayName": "Tools", "slug": "tools" },
-    { "displayName": "Toys & Games", "slug": "toys-games" }
+    { "displayName": "Biography", "slug": "biography" },
+    { "displayName": "Fantasy", "slug": "fantasy" },
+    { "displayName": "Fiction", "slug": "fiction" },
+    { "displayName": "Historical", "slug": "historical" },
+    { "displayName": "Horror", "slug": "horror" },
+    { "displayName": "Non-Fiction", "slug": "non-fiction" },
+    { "displayName": "Romance", "slug": "romance" },
+    { "displayName": "Self-Help", "slug": "self-help" },
+    { "displayName": "Thriller", "slug": "thriller" }
 ]

@@ -1,14 +1,14 @@
 import type { ReactNode } from "react"
 
 // Data Types
-export type Model = {
-    id: number
-    name: string
-    description: string
-    likes: number
-    image: string
-    category: string
-    dateAdded: string
+export interface Book {
+    id: number;
+    name: string;
+    author: string;
+    likes: number;
+    image: string;
+    category: string;
+    dateAdded: string;
 }
 
 export type Category = {
@@ -20,7 +20,7 @@ export type CategoriesData = {
     categories: Category[]
 }
 
-export type GetModelsParams = {
+export type GetBooksParams = {
     category?: string
 }
 
@@ -35,26 +35,26 @@ export type RootLayoutProps = Readonly<{
     children: React.ReactNode;
 }>
 
-export type ModelsPageProps = {
+export type BooksPageProps = {
     searchParams: {
         q?: string
     }
 }
 
-export type ModelDetailPageProps = {
+export type BookDetailPageProps = {
     params: Promise<{
         id: string
     }>
 }
 
 // Components Types
-export type ModelCardProps = {
-    model: Model
+export type BookCardProps = {
+    book: Book
 }
 
-export type ModelsGridProps = {
+export type BooksGridProps = {
     title: string
-    models: Model[]
+    books: Book[]
 }
 
 export type PillProps = {
