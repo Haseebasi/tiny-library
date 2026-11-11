@@ -1,25 +1,24 @@
-import "@/app/globals.css";
-import type{RootLayoutProps} from "@/app/types/index.ts"
+import "./globals.css";
+import type { RootLayoutProps } from "@/app/types"
+import { Nunito_Sans, Lato } from "next/font/google"
 import Navbar from "@/app/components/Navbar"
-import {Lato,Nunito_Sans} from "next/font/google"
+
+const albertSans = Nunito_Sans({
+  subsets: ["latin"],
+  display: "swap"
+})
 
 const lato = Lato({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-heading',
-  weight: "100"
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["100", "300", "400", "700", "900"],
+  variable: "--font-montserrat-alternates"
 })
-const nunito = Nunito_Sans({
-  subsets:['latin'],
-  display:'swap',
-  variable: '--font-nunito-sans'
-})
-export default function RootLayout({children}:RootLayoutProps) {
-  return ( 
-    <html lang="en" className={lato.variable}>
-      <body
-        className={`${nunito.variable}`}
-      >
+
+export default function RootLayout({ children }: RootLayoutProps) {
+  return (
+    <html lang="en">
+      <body className={`${albertSans.className} ${lato.variable}`}>
         <Navbar />
         {children}
       </body>
