@@ -1,5 +1,5 @@
 import HeroImageSquare from "@/public/hero-image-square.png"
-import TLLogo from "@/public/tinylibrary-logo.png"
+
 import Link from "next/link"
 
 export default function AboutPage() {
@@ -94,15 +94,7 @@ export default function AboutPage() {
                 </div>
             </section>
             
-            <section className="py-8">
-                <div className="flex justify-center">
-                    <img 
-                        src={TLLogo.src} 
-                        alt="TinyLibrary logo" 
-                        className="h-12 w-auto object-contain"
-                    />
-                </div>
-            </section>
+            
         </main>
     )
 }
